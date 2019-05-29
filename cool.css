@@ -1,0 +1,140 @@
+
+
+: root;{
+
+}
+
+*,*: :after,*:before{
+	box-sizing: inherit;
+	margin:0;
+	padding:0;
+}
+
+html{
+	position: relative;
+	margin:0;
+	padding:0;
+	font-size:62.5%;
+}
+
+.header-text{
+	position:absolute;
+	z-index: 1;
+	top:9rem;
+	margin-left:30%;
+	font-size:10rem;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	text-shadow: 2px 2px 4px powderblue;
+	animation-name: one;
+	animation:10s slide-right;
+
+}
+
+.bg-video{
+	z-index:-1;
+	opacity: 0.8;
+	overflow: hidden;
+	object-fit:cover;
+	width: 100%;
+	height:10%;
+	-webkit-clip-path: polygon(38% 0, 100% 0, 100% 36%, 53% 44%, 0 54%, 0 0);
+	clip-path: polygon(38% 0, 100% 0, 100% 36%, 53% 44%, 0 54%, 0 0);
+}
+
+.button1{
+	position:absolute;
+	z-index:2;
+	top: 26rem;
+	left:75rem;
+	font-family: 'Dosis', sans-serif;
+	font-size: 2rem;
+	padding: 25px 50px;
+	background-color: #ccccff;
+	border-radius:80px;
+	color: white;
+	 -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	 color: var(--color-light);
+	
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover{
+	-webkit-animation: headerbutton;
+	animation-duration:2s;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	
+}
+
+.button1:not(:hover){
+	opacity: .6;
+}
+
+.header-2{
+	font-size: 4rem;
+	font-family: 'Dosis', sans-serif;
+	color: white;
+	text-shadow: 2px 2px 5px #A9A9A9;
+}
+
+.body{
+	position:absolute;
+	z-index: 1;
+	top:45%;
+	margin-left:30%;
+	font-size:4px;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	text-shadow: 2px 2px 4px powderblue;
+}
+
+.galaxy{
+	border-radius: 30px;
+	transform-translate:(50%, 280%);
+	height:600px;
+	width:600px;
+}
+
+.milky-way:hover span {
+  padding-right: 25px;
+}
+
+.milky-way:hover{
+	-webkit-animation: headerbutton;
+	animation-duration:2s;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	
+}
+
+.content1{
+	display:flex;
+}
+
+
+.information{
+	position:absolute;
+	top:60rem;
+	left:35rem;
+	color: #fff;
+  background-color: #C3EBEE;
+  padding: 2rem;
+  height:10rem;
+  width:50rem;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 3rem;
+}
+
+.h1{
+	font-family:'Dosis', sans-serif;
+}
+
+
+
